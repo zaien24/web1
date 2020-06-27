@@ -18,8 +18,8 @@
     var target = document.querySelector('body');
     if (self.value === 'night') 
     {
-      //target.style.backgroundColor='black';
-      Body.setBackgroundColor('black');
+      Body.setBackgroundColor('black')
+      Body.setColor('white')
       self.value = 'day';
 
       var alist = document.querySelectorAll('a');
@@ -31,7 +31,7 @@
     }
     else 
     {                                                                         
-      target.style.backgroundColor='white';
+      Body.setBackgroundColor('white')
       Body.setColor('black')
       self.value = 'night';
 
