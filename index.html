@@ -14,6 +14,17 @@
     }
   }
 
+  var Link = {
+      setColor : function(color) {
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+          alist[i].style.color = 'powderblue';
+         i = i + 1;
+       }
+      }
+  }
+
   function nightDayHandler(self) {
     var target = document.querySelector('body');
     if (self.value === 'night') 
@@ -22,12 +33,12 @@
       Body.setColor('white')
       self.value = 'day';
 
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while (i < alist.length) {
-        alist[i].style.color = 'powderblue';
-        i = i + 1;
-      }
+      // var alist = document.querySelectorAll('a');
+      // var i = 0;
+      // while (i < alist.length) {
+      //   alist[i].style.color = 'powderblue';
+      //   i = i + 1;
+      // }
     }
     else 
     {                                                                         
