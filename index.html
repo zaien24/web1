@@ -16,7 +16,6 @@
     if (self.value === 'night') 
     {
       target.style.backgroundColor='black';
-      //target.style.color='white';
       Body.setColor('white')
       self.value = 'day';
 
@@ -30,7 +29,7 @@
     else 
     {                                                                         
       target.style.backgroundColor='white';
-      target.style.color='black';
+      Body.setColor('black')
       self.value = 'night';
 
       var alist = document.querySelectorAll('a');
